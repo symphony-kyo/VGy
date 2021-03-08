@@ -1,7 +1,51 @@
-h1{
-    color: red;
-}
+@import 'reset.css';
 
-.open {
-    background-color: pink;
+.header{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    background-color: red;
+    font-weight: bold;
+    font-family: 'Arial', 'メイリオ', 'ゴシック';
+    padding: 10px;
+    line-height: 5vh;
+    &__title_name{
+        width: 30%;
+        font-size: 30px;
+        text-align: center;
+        color: pink;
+        margin: 0 15px;
+    }
+    &__search{
+        display: flex;
+        width: 25%;
+        height: 100%;
+        margin: 0 50px;
+        &--bar{
+            background: white;
+            width: 85%;
+        }
+        &--icon{
+            width: 15%;
+        }
+    }
+    &__side_bar{
+        width: 45%;
+        height: 100%;
+        display: flex;
+        margin-right: 20px;
+        text-align: center;
+        &--ranking{
+            margin: 0 15px;
+            width: 20%;
+        }
+        &--season{
+            margin: 0 15px;
+            width: 20%;
+        }
+        &--cooking{
+            margin: 0 15px;
+            width: 20%;
+        }
+    }
 }

@@ -1,10 +1,16 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">VGy</h1>
-        <p class="lead">私たちは食によって生かされている</p>
+<div class="header">
+    <div class="header__title_name">VGy</div>
+    <div class="header__search">
+        <div class="header__search--bar"></div>
+        <div class="header__search--icon"></div>
+    </div>
+    <div class="header__side_bar">
+        <div class="header__side_bar--ranking">ランキング</div>
+        <div class="header__side_bar--season">旬</div>
+        <div class="header__side_bar--cooking">調理法</div>
     </div>
 </div>
 {% endblock head %}

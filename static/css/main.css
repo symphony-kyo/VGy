@@ -1,7 +1,59 @@
-h1 {
-  color: red;
+@charset "UTF-8";
+@import url(reset.css);
+.header {
+  display: flex;
+  height: 8vh;
+  width: 100%;
+  background-color: red;
+  font-weight: bold;
+  font-family: 'Arial', 'メイリオ', 'ゴシック';
+  padding: 10px;
+  line-height: 5vh;
 }
 
-.open {
-  background-color: pink;
+.header__title_name {
+  width: 30%;
+  font-size: 30px;
+  text-align: center;
+  color: pink;
+  margin: 0 15px;
+}
+
+.header__search {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  margin: 0 50px;
+}
+
+.header__search--bar {
+  background: white;
+  width: 85%;
+}
+
+.header__search--icon {
+  width: 15%;
+}
+
+.header__side_bar {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.header__side_bar--ranking {
+  margin: 0 15px;
+  width: 20%;
+}
+
+.header__side_bar--season {
+  margin: 0 15px;
+  width: 20%;
+}
+
+.header__side_bar--cooking {
+  margin: 0 15px;
+  width: 20%;
 }
